@@ -20,5 +20,18 @@
 		return $xml;
 	}
 	
-	
+	// ovo je na mockupu
+	function lang(){
+		if (session_status() == PHP_SESSION_NONE) {
+			session_start();
+		}
+
+		$allowed_lang = array('english', 'srpski');
+
+		if (isset($_GET['lang']) === true && in_array($_GET['lang'], $allowed_lang) === true){
+			$_SESSION['lang'] = $_GET['lang'];
+		} else if (isset($_SESSION['lang']) === false) {
+			$_SESSION['lang'] = 'english';
+		}
+	}
 ?>

@@ -1,3 +1,9 @@
+<?php
+session_start();
+include 'api/config.php';
+$xml = get_config('api/restricted/config.xml');
+$conn = connect($xml);
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -150,8 +156,8 @@
     <p><input type="submit" name="submit" id="submit" value="Pošalji upit"/> 
     </form>
 EOD;
-//if(isset($_GET['msg'])) echo '<p>'.$_GET['msg'].'</p>'; //If message is set echo it
-//echo "<h1>Something went wrong</h1>";
+if(isset($_GET['msg'])) echo '<p>'.$_GET['msg'].'</p>'; //If message is set echo it
+
 echo $input_form;
 ?>
 </body>
