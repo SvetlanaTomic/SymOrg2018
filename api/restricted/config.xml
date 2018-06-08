@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<configuration>
+	<web>
+		<hostname>localhost</hostname>
+		<username>root</username>
+		<password></password>
+		<database>iswib_main</database>
+		<onlypublished>false</onlypublished>
+	</web>
+	<applications>
+		<application for="participants">
+			<open>false</open>
+			<link>https://docs.google.com/forms/d/e/1FAIpQLSfQxr6NkvWRk7NvnE4kQel9upmZpQtyLdGT5TGSd_ZOwE9oxw/viewform</link>
+		</application>
+		<application for="volunteers">
+			<open>false</open>
+			<link>https://docs.google.com/forms/d/e/1FAIpQLScP9XItM34LJnslP0Ltd629IrE_3qOestznd6wwNDxAdZd5SA/viewform?usp=sf_link</link>
+		</application>
+		<application for="promoters">
+			<open>false</open>
+			<link>https://docs.google.com/forms/d/e/1FAIpQLSc9EJY0m61vH3Gb_DuXYjdKWRLHU5isKoC8V9yt6px4QP04nQ/viewform?usp=sf_link</link>
+		</application>
+		<application for="org-team">
+			<open>false</open>
+			<link>https://docs.google.com/forms/d/e/1FAIpQLSdfMJmBZ6Plr0T3kl7GTuex8fxtKiojXXi4gkmK5KPk96kfJA/viewform?usp=sf_link</link>
+		</application>
+	</applications>
+	<security>
+		<offline>false</offline>
+		<authentication>true</authentication>
+	</security>	
+</configuration>
